@@ -1,0 +1,64 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s52efebb1e6941fdaf52560354be1a4e",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "140dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "CopyflxRoundCalendarItem0c01a51c9b4c344",
+        "CopylblItemName0i5b78012fbb644"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopyflxCalendarItem0gcf81ed8b2be4f",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e057c72475cd4a4cabfdad68ec8422cc",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxScrollAuctionCalendarContent",
+    "pf": "frmDashBoard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

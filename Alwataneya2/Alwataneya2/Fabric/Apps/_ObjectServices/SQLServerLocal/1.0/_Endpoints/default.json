@@ -1,0 +1,17 @@
+{
+  "name" : "default",
+  "dataAdapterId" : "1",
+  "type" : "CustomDataAdapter",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "IdentityProvider",
+    "jdbcClass" : "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+    "jdbcUrl" : "jdbc:sqlserver://et-az-dev-sqlmi.3ba814f9a3e7.database.windows.net;databaseName=et_dev_awa_tx;encrypt=true",
+    "userId" : "et_dev_awa_tx_user",
+    "password" : "deVETApp@45",
+    "advancedSettings" : null,
+    "maxPoolSize" : null,
+    "connectionTimeout" : null
+  },
+  "jsonpath" : false
+}

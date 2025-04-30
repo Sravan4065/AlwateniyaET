@@ -1,0 +1,60 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "95dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sc40f7deccdc47b38a549fe4d71d3df7",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxRecommendedBid",
+        "flxRetailValue"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxRecommended",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ge12af4256c0490689a274d468865b40",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxInnerCarDetails",
+    "pf": "CopyfrmDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

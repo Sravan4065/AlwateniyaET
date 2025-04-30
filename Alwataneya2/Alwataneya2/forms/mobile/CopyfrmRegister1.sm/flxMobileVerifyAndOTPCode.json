@@ -1,0 +1,69 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf147ba359c4473099bd75eecaeaf506",
+    "_top_": {
+        "type": "number",
+        "value": "110"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "HeaderRegisterMobileOTP",
+        "flxOTPCodeBody",
+        "flxOtpVerificationFooter"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxMobileVerifyAndOTPCode",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "ia8fd37ab44a402e9d9d319c8b930f1a",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxMain",
+    "pf": "CopyfrmRegister1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

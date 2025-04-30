@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4fc2a9e4a3d407e8d2493dacef127c9",
+    "_text_": "See all",
+    "_top_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s8c8cea99d14499f930aefe7d2338b8e"
+    },
+    "displaytext": true,
+    "id": "btnSeeAllFromRecommendedFilter",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "iaf3a0a4b2274d1d9f2d308d4b3784b6",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxRecommendedFilter",
+    "pf": "frmDashBoard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

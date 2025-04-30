@@ -1,0 +1,99 @@
+{
+    "AS_Button_adbd5968fb244ca08de7ab5f86c39dd1": {
+        "id": "AS_Button_adbd5968fb244ca08de7ab5f86c39dd1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "KUID": "ba7b1a32e79b4966977b4ce809f9ed63",
+            "name": "CopyfrmScreen",
+            "platform": "",
+            "type": "forms"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_SERVICE_edc6926bd911486c9048e8ace5d7a1cc",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {
+                "ME_Mapping_bd301adb698f4d95bd83d29501b2959a": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_bd301adb698f4d95bd83d29501b2959a",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "txtPassword",
+                        "widgetPath": "this.view.txtPassword",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "CopyfrmScreen",
+                        "widgetKUID": "c5b8e38d47244aa89b5ff517823c47fa",
+                        "itemKUID": "ba7b1a32e79b4966977b4ce809f9ed63",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "password",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "isDeepLinkRequired": false,
+                            "login_type": "basic",
+                            "operationname": "login",
+                            "servicename": "UserLoginRepo",
+                            "type": "identity"
+                        }
+                    }
+                },
+                "ME_Mapping_ea968f3cb0b146418701bb4148d70e55": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ea968f3cb0b146418701bb4148d70e55",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "txtEmail",
+                        "widgetPath": "this.view.txtEmail",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "CopyfrmScreen",
+                        "widgetKUID": "eb556d9b674e4f0c9ea574fd78f5cd23",
+                        "itemKUID": "ba7b1a32e79b4966977b4ce809f9ed63",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "userid",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "isDeepLinkRequired": false,
+                            "login_type": "basic",
+                            "operationname": "login",
+                            "servicename": "UserLoginRepo",
+                            "type": "identity"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_ea968f3cb0b146418701bb4148d70e55", "ME_Mapping_bd301adb698f4d95bd83d29501b2959a"],
+            "serviceconfig": {
+                "isDeepLinkRequired": false,
+                "login_type": "basic",
+                "operationname": "login",
+                "servicename": "UserLoginRepo",
+                "type": "identity"
+            },
+            "enableMappingEditor": true,
+            "useDeviceBrowser": false,
+            "isDeepLinkRequired": false
+        }]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_skin_": "se23aedd7abe48c2afaa2597b07a92ba",
+    "_text_": "send",
+    "_width_": {
+        "type": "string",
+        "value": "80dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s04ed2e335ad410f857efe73a9a69678",
+    "id": "btnSend",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f16efd413fcf44d9a93617670d513320",
+    "name": "kony.ui.Button",
+    "parent": "flxEmail",
+    "pf": "CopyfrmScreen1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

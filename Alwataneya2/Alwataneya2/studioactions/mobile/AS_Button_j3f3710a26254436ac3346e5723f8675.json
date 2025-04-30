@@ -1,0 +1,100 @@
+{
+    "AS_Button_j3f3710a26254436ac3346e5723f8675": {
+        "id": "AS_Button_j3f3710a26254436ac3346e5723f8675",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "KUID": "ba7b1a32e79b4966977b4ce809f9ed63",
+            "name": "CopyfrmScreen",
+            "platform": "",
+            "type": "forms"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ge442e682fcb4b2a96e6ece266343429",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getUserObj",
+            "display": "getUserObj",
+            "inputparams": [],
+            "parentId": "SHOW_ALERT_f3c6919f6adf4ba8bb010479ddbdfe05",
+            "callbackType": "True",
+            "disabled": null,
+            "source": "controller"
+        }, {
+            "id": "LOADING_INDICATOR_ed066d2fade14514b6a3a8e5c73abf86",
+            "selectedOption": "show",
+            "type": "LOADING_INDICATOR",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "LOADING_INDICATOR_e7b54aa95c32482384cc01dba55dd2e3",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_b58c7c833c9f425dbb30ee1cd6dad1d2",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Failure",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "LOADING_INDICATOR_dfffd4ee2e734af0b5680e761d991bb3",
+            "selectedOption": "dismiss",
+            "parentId": "INVOKE_SERVICE_b58c7c833c9f425dbb30ee1cd6dad1d2",
+            "type": "LOADING_INDICATOR",
+            "callbackType": "Success",
+            "skin": "none",
+            "position": "constants.LOADING_SCREEN_POSITION_FULL_SCREEN",
+            "isBlocked": "true",
+            "showProgressIndicator": "true"
+        }, {
+            "id": "SHOW_ALERT_f3c6919f6adf4ba8bb010479ddbdfe05",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertMessage": "Successfully Logged in!!!",
+            "messageType": "constant",
+            "parentId": "INVOKE_SERVICE_b58c7c833c9f425dbb30ee1cd6dad1d2",
+            "callbackType": "Success",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "SHOW_ALERT_bd139b56c24b4f66b97f851ff3b82328",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertMessage": "Login Failed, Please Try Again!!",
+            "messageType": "constant",
+            "parentId": "INVOKE_SERVICE_b58c7c833c9f425dbb30ee1cd6dad1d2",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "INVOKE_SERVICE_b58c7c833c9f425dbb30ee1cd6dad1d2",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "isDeepLinkRequired": false,
+                "login_type": "oauth2",
+                "operationname": "login",
+                "servicename": "CustomAzureB2C",
+                "type": "identity"
+            },
+            "enableMappingEditor": true,
+            "useDeviceBrowser": true,
+            "isDeepLinkRequired": false
+        }]
+    }
+}

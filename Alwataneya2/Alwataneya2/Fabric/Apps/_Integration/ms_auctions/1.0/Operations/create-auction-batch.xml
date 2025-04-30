@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="create-auction-batch" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.et.ae.JwtTokenPreProcesser"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/create-auction-batch"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://20.233.107.18/api/v1/auction-batch/"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="user_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOWQzMzYyYTAtYTM4Yy00NDliLWIzMWYtY2Q0YWQ0ZWUyYTkwIiwibmFtZSI6Ik1vaGFtbWVkIFNpcmFqIiwiZ3JvdXBzIjpbIkFjY291bnRhbnQiLCJNYW5hZ2VtZW50IiwiQXBwcm92ZXJzIiwiU2VsbGVycyIsIkdlbmVyYWwiLCJTYWxlc0Nvb3JkaW5hdG9yIiwiUmVwb3J0cyIsIkNvbmZpcm1lcnMiLCJCdXllcnMiLCJTYWxlcyBNb2R1bGUiLCJBZG1pbiBNb2R1bGUiLCJNYW5hZ2VtZW50IG1vZHVsZSIsIkh5YnJpZCBNb2R1bGUiLCJBY2NvdW50YW50IE1vZHVsZSIsIlJlcG9ydCBNb2R1bGUiLCJTZWxsaW5nIE1vZHVsZSIsIkRhc2hib2FyZCBNb2R1bGUiXSwiam9iX3RpdGxlIjoiYWRtaW4iLCJwZXJtaXNzaW9ucyI6eyJTZWxsaW5nIE1vZHVsZSI6WyJBZGQgYSBuZXcgY2FyIiwiWW91ciB2ZWhpY2xlcyIsIlJlY2VpdmVkIHZlaGljbGVzIiwiQWN0aXZlIGF1Y3Rpb25zIiwiU29sZCB2ZWhpY2xlcyIsIlVuc29sZCB2ZWhpY2xlcyIsIk15IGludm9pY2VzIiwiTXkgcGF5bWVudHMiLCJQcm9maWxlIiwiVW5hcHByb3ZlZCBWZWhpY2xlIiwiQ29tcGxldGVkIFJlcXVlc3RzIiwiUmVxdWVzdGVkIFNlcnZpY2VzIiwiUkVBRCAmIFdSSVRFIl0sIlNhbGVzIE1vZHVsZSI6WyJSZXF1ZXN0IHZlaGljbGVzIiwiVGVjaG5pY2FsIHZlaGljbGVzIiwiV2FzaGVkIHZlaGljbGVzIiwiUGhvdG8gdmVoaWNsZXMiLCJJbmFjdGl2ZSBhdWN0aW9ucyIsIlNvbGQgdmVoaWNsZXMiLCJVbnNvbGQgdmVoaWNsZXMiLCJBd2FyZGVkIHJlcG9ydCIsIlNvbGQgQXJjaGl2ZSIsIlVuc29sZCBhcmNoaXZlIiwiQWN0aXZlIGF1Y3Rpb25zIiwiVG8gRG8gTGlzdCIsIkFkZCBOZXcgQ2FyIiwiQXVjdGlvbiBCdXllciBEYXRhIiwiQXVjdGlvbiBTZWxsZXIgRGF0YSIsIkFkZCBuZXcgY2FyIGZyb20gRVJQIiwiVW5kZXIgYXBwcm92YWwgRGlyZWN0IFNhbGVzIiwiU3VibWl0dGVkIEJ5IFNlbGxlciIsIkFwcHJvdmVkIEF1Y3Rpb24gYnkgc2VsbGVyIiwiTWFya2V0aW5nIiwiQ3VzdG9tZXIgTGlzdCIsIkFyY2hpdmVkIExpc3QiLCJPcGVyYXRpb24gTG9nIiwiVGVjaG5pY2FsIFRlc3QiLCJSZXF1ZXN0cyIsIlJlcXVlc3RlZCBTZXJ2aWNlcyIsIlNlcnZpY2VzIEluIFByb2Nlc3MiLCJDb21wbGV0ZWQgU2VydmljZSBQcm92aWRlciBSZXF1ZXN0cyIsIkh5YnJpZCBVbnNvbGQgVmVoaWNsZXMiLCJSRUFEICYgV1JJVEUiLCJCdXllciBDaGFuZ2UiLCJCZWZvcmUgQXVjdGlvbiBTZXJ2aWNlcyIsImNvbXBsZXRlZCBJbnNwZWN0aW9uIFNlcnZpY2VzIiwiQ29tcGxldGVkIEJ1eWVyIENoYW5nZSIsIlVuc29sZCBWZWhpY2xlcyIsIkludmVudG9yeSJdLCJNYW5hZ2VtZW50IG1vZHVsZSI6WyJBY3RpdmUgYXVjdGlvbnMiLCJTYWxlcyBJbnZvaWNlIGRldGFpbHMiLCJTZWxsZXJzIHJlcG9ydCIsIlNhbGVzIHJlcG9ydCIsIkF1Y3Rpb24gTGlzdCIsIlByb2ZpdHMgZGV0YWlscyIsIk1vbnRobHkgcHJvZml0cyIsIkN1c3RvbWVyIGxpc3QiLCJBdWN0aW9uIEJhdGNoIGxpc3QiLCJRdWFsaXR5IEFzc3VyYW5jZSIsIkVSUCBJbnRlZ3JhdGlvbiIsIlNlbGxlciBMaXN0IiwiUkVBRCAmIFdSSVRFIl0sIkFjY291bnRhbnQgTW9kdWxlIjpbIlNvbGQgdmVoaWNsZSIsIlNlbGxlciBJbnZvaWNlIGxpc3QiLCJCdXllciBpbnZvaWNlIGxpc3QiLCJTZWxsZXIgUGF5bWVudHMiLCJCdXllciBwYXltZW50cyIsIkN1c3RvbWVycyIsIlNlY3VyaXR5IERlcG9zaXQiLCJUTyBETyBMaXN0IiwiQmFuayBTdGF0ZW1lbnQiLCJSRUFEICYgV1JJVEUiLCJDYXIgSW5zcGVjdGlvbiBJbnZvaWNlcyIsIkJ1eWVyIENoYW5nZSBJbnZvaWNlcyJdLCJSZXBvcnQgTW9kdWxlIjpbIkF1Y3Rpb24gRW5kIiwiQWN0aXZlIGF1Y3Rpb25zIiwiU3RhdGlzdGljYWwgUmVwb3J0IiwiQ2FyIFByaWNlIFJlcG9ydCIsIkZlYXR1cmUgQ2FyIFByaWNlIFJlcG9ydCIsIlJFQUQgJiBXUklURSIsIkRlbGl2ZXJlZCBWZWhpY2xlcyJdLCJBZG1pbiBNb2R1bGUiOlsiU2VydmljZSBsaXN0IiwiRXhwZW5zZSBsaXN0IiwiVXNlcnMgUGVybWlzc2lvbnMiLCJBZHMgTWFuYWdlbWVudCIsIkZlYXR1cmVzIE1hbmFnZW1lbnQiLCJNYWtlcyBhbmQgbW9kZWxzIE1hbmFnZW1lbnQiLCJMb2NhdGlvbiBMaXN0IiwiU2VydmljZXMgTGlzdCIsIlJFQUQgJiBXUklURSJdLCJEYXNoYm9hcmQgTW9kdWxlIjpbIlNhbGVzIENoYXJ0IiwiUHVyY2hhc2UgQ2hhcnQiLCJVc2VyIENoYXJ0Il0sIkh5YnJpZCBNb2R1bGUiOlsiT2ZmbGluZSBiaWQgUGFnZSAiLCJTaG93c2NyZWVuIFBhZ2UiXX0sImlhdCI6MTc0NDAwMjA4NywiZXhwIjoxNzQ0MDA1Njg3LCJpc3MiOiJodHRwczovL2V0LmFlIn0.oUD3T2pISBi-RYrw9nH2mpbVH2IOULJjE7-lxWuPpwc" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="jwt_token" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="auction_start_date" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="2025-04-07T10:15:00Z" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="auction_end_date" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="2025-04-17T11:14:00Z" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="description" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Test" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="title" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Test2" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="boolean" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="send_sms" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="true" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;  &quot;auction_start_date&quot;: &quot;$auction_start_date&quot;,&#10;  &quot;auction_end_date&quot;: &quot;$auction_end_date&quot;,&#10;  &quot;description&quot;: &quot;$description&quot;,&#10;  &quot;title&quot;: &quot;$title&quot;,&#10;  &quot;send_sms&quot;: $send_sms&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;  &quot;auction_start_date&quot;: &quot;$auction_start_date&quot;,&#10;  &quot;auction_end_date&quot;: &quot;$auction_end_date&quot;,&#10;  &quot;description&quot;: &quot;$description&quot;,&#10;  &quot;title&quot;: &quot;$title&quot;,&#10;  &quot;send_sms&quot;: $send_sms&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="message" order="" paramOrder="7" parentOrder="0" passnull="false" sms-name="" src="$.message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <record id="data" order="" paramOrder="1" parentOrder="0" src="$.data" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="end_date" order="" paramOrder="2" parentOrder="1" passnull="false" sms-name="" src="end_date" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="description" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="description" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="auction_batch_list_id" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="auction_batch_list_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="title" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="title" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="start_date" order="" paramOrder="6" parentOrder="1" passnull="false" sms-name="" src="start_date" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+        <record id="error" order="" paramOrder="8" parentOrder="0" src="$.error" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="message" order="" paramOrder="9" parentOrder="8" passnull="false" sms-name="" src="message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

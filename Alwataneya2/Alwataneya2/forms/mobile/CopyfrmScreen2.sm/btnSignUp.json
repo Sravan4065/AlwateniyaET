@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sced32e230a34deab454a433824a91d4",
+    "_text_": "Sign Up",
+    "_top_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3d87ba262864995afa373466fd12acb",
+    "id": "btnSignUp",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f9abb768ce9044ba970236574d4cb4e0",
+    "name": "kony.ui.Button",
+    "parent": "flxBody",
+    "pf": "CopyfrmScreen2",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

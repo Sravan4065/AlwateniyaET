@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="sellerreport" passwordencrypted="false" security="public" type="dataAdapterConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value=""/>
+        <config-param api-version="" appid="" name="opcode" value="service"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="entitymetadata" value="{&quot;dml&quot;:false,&quot;query&quot;:&quot;WITH HighestBids AS (\n    SELECT \n        object_id, \n        MAX(bid_amount) AS max_bid_amount\n    FROM auction_bidding \n    GROUP BY object_id\n),\nFilteredBids AS (\n    SELECT \n        ab.object_id,\n        ab.bid_amount,\n        ab.is_approved\n    FROM auction_bidding ab\n    JOIN HighestBids hb ON ab.object_id = hb.object_id AND ab.bid_amount = hb.max_bid_amount\n)\n\nSELECT \n    u.name, \n    u.reg_date, \n    COUNT(DISTINCT o.object_id) AS total_objects, \n    COUNT(DISTINCT a.auction_id) AS auction_vehicles,\n    COUNT(DISTINCT CASE WHEN a.auction_id IS NULL THEN o.object_id END) AS unauctioned_vehicles,\n    SUM(a.total_commission) AS total_commission,\n    COUNT(DISTINCT CASE WHEN fb.is_approved = 0 THEN o.object_id END) AS highest_bid_not_approved_vehicles,\n    SUM(CASE WHEN ab.is_approved = 1 THEN ab.bid_amount ELSE 0 END) AS total_approved_bid_amount\nFROM users u\nLEFT JOIN asset_objects o ON o.created_by = u.user_id\nLEFT JOIN auctions a ON a.object_id = o.object_id\nLEFT JOIN auction_bidding ab ON o.object_id = ab.object_id\nLEFT JOIN FilteredBids fb ON o.object_id = fb.object_id -- Only highest bids considered\nWHERE u.is_seller = 1\nGROUP BY u.name, u.reg_date;&quot;,&quot;overloadPosition&quot;:0,&quot;serviceInput&quot;:[],&quot;serviceOutput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;}"/>
+        <config-param api-version="" appid="" name="metadataformatterobject" value="{&quot;overloadPosition&quot;:0,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;,&quot;dml&quot;:false,&quot;serviceOutput&quot;:[],&quot;displayName&quot;:&quot;CustomQuery&quot;,&quot;qualifiedName&quot;:&quot;dbo_CustomQuery&quot;,&quot;pkgName&quot;:&quot;&quot;,&quot;serviceInput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;qualifiedNameSuffix&quot;:&quot;&quot;}"/>
+        <config-param api-version="" appid="" name="isCustomQuery" value="true"/>
+        <config-param api-version="" appid="" name="customQuery" value="WITH HighestBids AS (&#10;    SELECT &#10;        object_id, &#10;        MAX(bid_amount) AS max_bid_amount&#10;    FROM auction_bidding &#10;    GROUP BY object_id&#10;),&#10;FilteredBids AS (&#10;    SELECT &#10;        ab.object_id,&#10;        ab.bid_amount,&#10;        ab.is_approved&#10;    FROM auction_bidding ab&#10;    JOIN HighestBids hb ON ab.object_id = hb.object_id AND ab.bid_amount = hb.max_bid_amount&#10;)&#10;&#10;SELECT &#10;    u.name, &#10;    u.reg_date, &#10;    COUNT(DISTINCT o.object_id) AS total_objects, &#10;    COUNT(DISTINCT a.auction_id) AS auction_vehicles,&#10;    COUNT(DISTINCT CASE WHEN a.auction_id IS NULL THEN o.object_id END) AS unauctioned_vehicles,&#10;    SUM(a.total_commission) AS total_commission,&#10;    COUNT(DISTINCT CASE WHEN fb.is_approved = 0 THEN o.object_id END) AS highest_bid_not_approved_vehicles,&#10;    SUM(CASE WHEN ab.is_approved = 1 THEN ab.bid_amount ELSE 0 END) AS total_approved_bid_amount&#10;FROM users u&#10;LEFT JOIN asset_objects o ON o.created_by = u.user_id&#10;LEFT JOIN auctions a ON a.object_id = o.object_id&#10;LEFT JOIN auction_bidding ab ON o.object_id = ab.object_id&#10;LEFT JOIN FilteredBids fb ON o.object_id = fb.object_id -- Only highest bids considered&#10;WHERE u.is_seller = 1&#10;GROUP BY u.name, u.reg_date;"/>
+        <config-param api-version="" appid="" name="password" value="et_dev@12"/>
+        <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
+        <config-param api-version="" appid="" name="advancedSettings" value=""/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:sqlserver://et-az-dev-sqlmi.3ba814f9a3e7.database.windows.net;databaseName=et_dev_awa_tx;encrypt=true"/>
+        <config-param api-version="" appid="" name="jdbcClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <config-param api-version="" appid="" name="userId" value="et_dev_awa_tx_user"/>
+        <config-param api-version="" appid="" name="maxPoolSize" value=""/>
+        <config-param api-version="" appid="" name="connectionTimeout" value=""/>
+        <config-param api-version="" appid="" name="authservicetype" value="IdentityProvider"/>
+        <config-param api-version="" appid="" name="adaptertype" value="CUSTOM"/>
+        <config-param api-version="" appid="" name="basepackage" value="com.kony.rdbms"/>
+        <config-param api-version="" appid="" name="identityProviderType" value=""/>
+        <config-param api-version="" appid="" name="identityProvider" value=""/>
+        <config-param api-version="" appid="" name="mapped_to" value="dbo.CustomQuery"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false"/>
+        <template-param datatype="" defaultvalue="" description="" encode="false" format="" formatvalue="" name="criteria" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

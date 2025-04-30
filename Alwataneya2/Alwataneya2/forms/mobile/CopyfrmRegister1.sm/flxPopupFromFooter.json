@@ -1,0 +1,62 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "-45%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "340dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s76d7a63a38d4861a2f94006749fc8db",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxTop",
+        "flxSeller",
+        "flxBuyer",
+        "btnSaveAndContinue"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxPopupFromFooter",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d09bcea8a3964eb39e688c25690e73c3",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxPopupSellerOrBuyer",
+    "pf": "CopyfrmRegister1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

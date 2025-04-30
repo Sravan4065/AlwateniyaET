@@ -1,0 +1,36 @@
+{
+    "AS_Segment_a580b8b9d0014a63ac68905cf27d3b35": {
+        "id": "AS_Segment_a580b8b9d0014a63ac68905cf27d3b35",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "KUID": "a8ccea8059b14bbc85bea0a2e0520380",
+            "name": "CopyfrmDashBoard",
+            "platform": "",
+            "type": "forms"
+        },
+        "language": "js",
+        "eventType": "onRowClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__f440b0b864c448f387ee1ebd4c741d85",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "CopyfrmOnlineAuction1",
+            "formKUID": "e245f7d8e5bb43728e4c7250628bbb53",
+            "projectName": "Alwataneya2",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}

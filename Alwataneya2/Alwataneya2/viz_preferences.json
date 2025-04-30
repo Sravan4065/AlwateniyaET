@@ -1,0 +1,63 @@
+{
+    "FP": {
+        "iphone": false,
+        "android": false,
+        "ipad": false,
+        "tabrcandroid": false,
+        "spaip": false,
+        "spaan": false,
+        "spabb": false,
+        "spaipad": false,
+        "spaandroidtablet": false,
+        "winphone8": false,
+        "spawinphone8": false,
+        "windows8": false,
+        "spawindowstablet": false,
+        "desktopweb": false
+    },
+    "general": {
+        "urls": {
+            "konyFabricURL": "https://dev-hcltx.et.ae",
+            "accountsBase": "https://dev-hcltx.et.ae/authService/accounts",
+            "accountsApiBase": "https://dev-hcltx.et.ae:443/accounts/api/v1_0",
+            "portalBase": "https://dev-hcltx.et.ae:443/mfconsole"
+        },
+        "codeEditor": {
+            "indentConf": {},
+            "externalEditor": {
+                "displayName": "Sublime"
+            }
+        },
+        "proxyConfig": {},
+        "remoteMACConfig": {},
+        "testRecorder": {
+            "port": 9111
+        },
+        "AllowLockManagementSettings": false,
+        "inlinePreviewEnabled": false,
+        "isHtmlPreviewEnabled": false,
+        "autoCollapsePW": false,
+        "widgetHighlighterActionButtons": false,
+        "isSnapModeEnabled": true,
+        "containerPlaceholders": true,
+        "skipAppSigningRequirements": false,
+        "autoDetectIP": true,
+        "staticIP": "",
+        "autoUpdate": true,
+        "enableExternalAuth": false,
+        "authProvider": "",
+        "groupServicesByCategory": false,
+        "donotShowGenerateObjectModelUpdate": false
+    },
+    "build": {},
+    "starter": {
+        "general": {
+            "enableMetrics": true
+        }
+    },
+    "dx": {
+        "general": {},
+        "dxClient": {}
+    },
+    "vizTheme": "dark"
+}

@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3dc0a7985244286ac0e65c3ec0f64e8",
+    "_text_": "Save and continue",
+    "_top_": {
+        "type": "string",
+        "value": "450dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sb14eac7331b414789a64e3bc7e9ec0a"
+    },
+    "displaytext": true,
+    "id": "btnSaveAndContinueForTermsNConditions",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "jaefb7695e4c442d8f1ffcf2c85c5f62",
+    "name": "kony.ui.Button",
+    "parent": "flxTermsAndConditions",
+    "pf": "CopyfrmRegister1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

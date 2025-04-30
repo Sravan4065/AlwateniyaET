@@ -1,0 +1,11 @@
+{
+  "apiThrottling": {},
+  "config": {
+    "mode": "sync"
+  },
+  "encryptSecureInfo": false,
+  "jsonpath": false,
+  "name": "default",
+  "service": [],
+  "type": "IntegrationWorkflow"
+}

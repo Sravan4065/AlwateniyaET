@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2ce2ef7fcc544db9506925a46d27871",
+    "_text_": "SignIn Now",
+    "_width_": {
+        "type": "string",
+        "value": "18%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "60%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "48%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblSignIn",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b332b7fbc7d04b65b35cf00247776e95",
+    "name": "kony.ui.Label",
+    "parent": "flxFooter",
+    "pf": "CopyfrmScreen4",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "textstyle": {},
+    "tooltip": "",
+    "wType": "Label"
+}

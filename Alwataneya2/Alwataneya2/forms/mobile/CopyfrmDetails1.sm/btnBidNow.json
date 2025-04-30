@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "s977992beb094b718c906baac65d8203",
+    "_text_": "Bid Now",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sb14eac7331b414789a64e3bc7e9ec0a",
+    "id": "btnBidNow",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "bd445fd6b3d548259fa6f0ac9ad0350d",
+    "name": "kony.ui.Button",
+    "parent": "flxBidNow",
+    "pf": "CopyfrmDetails1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

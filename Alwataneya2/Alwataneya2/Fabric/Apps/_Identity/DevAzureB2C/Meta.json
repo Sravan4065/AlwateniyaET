@@ -1,0 +1,21 @@
+{
+  "name" : "DevAzureB2C",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"dependent_providers\":[],\"auth_type\":\"oauth2\",\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"oauthProviderType\":\"default\",\"grant_type\":\"authorization_code\",\"authorization_endpoint\":\"https://etdevconsumeraccess.b2clogin.com/etdevconsumeraccess.onmicrosoft.com/B2C_1A_MYCUSTOMPOLICY/oauth2/v2.0/authorize\",\"token_endpoint\":\"https://etdevconsumeraccess.b2clogin.com/etdevconsumeraccess.onmicrosoft.com/B2C_1A_MYCUSTOMPOLICY/oauth2/v2.0/token\",\"logout_url\":\"\",\"client_authentication\":{\"client_id\":\"f1e16048-d97b-4423-ab95-049ad21fdfa2\",\"client_secret\":\"7sY8Q~9haVVQUkXppxEInbL8WaklP2vH.0WtSdnC\",\"authentication_scheme\":\"header\",\"client_pvt_key_jwt\":false},\"scope\":\"openid profile offline_access https://etdevconsumeraccess.onmicrosoft.com/api/demo.read\",\"authentication_scheme\":\"header\",\"profile\":{\"endpoint\":{\"location\":\"\",\"type\":\"none\",\"value\":\"\"},\"request_method\":\"GET\",\"profile_attribute_selectors\":{\"federation_id\":\"9105c040-3a27-469f-af37-ea6c7e31f53f\",\"email\":\"\",\"first_name\":\"\",\"last_name\":\"\",\"custom_profile_attribute_selectors\":{}}},\"dollarParamPresence\":{\"authorization_endpoint\":false,\"token_endpoint\":false,\"logout_url\":false,\"revoke_url\":false,\"profile_url\":false},\"enable_refresh_login\":true,\"enable_identity_pkce\":true,\"additional_data\":{\"token_request\":[],\"refresh_request\":[],\"profile_request\":[],\"authorize_request\":[],\"revoke_request\":[]}}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false,
+    "oauth2_success_url_config" : {
+      "allow_any" : true,
+      "allowed_urls" : [ ],
+      "default" : -1
+    }
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false,
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

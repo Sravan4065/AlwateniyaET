@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="get-user-obj" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/get-user-obj"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://20.233.107.18/api/v1/user/"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="rateLimitPerIP" value="10"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false"/>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="4052" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_source" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="azure" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;user_id&quot;: &quot;$user_id&quot;,&#10;    &quot;user_source&quot;: &quot;$user_source&quot;&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;user_id&quot;: &quot;$user_id&quot;,&#10;    &quot;user_source&quot;: &quot;$user_source&quot;&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="nick" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.nick" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="access_token" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.access_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="refresh_token" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.refresh_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="$.user_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="30" parentOrder="0" passnull="false" sms-name="" src="$.name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="groups" order="" paramOrder="31" parentOrder="0" passnull="false" sms-name="" src="$.groups[*]" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="job_title" order="" paramOrder="32" parentOrder="0" passnull="false" sms-name="" src="$.job_title" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="email" order="" paramOrder="33" parentOrder="0" passnull="false" sms-name="" src="$.email" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="suspended" order="" paramOrder="34" parentOrder="0" passnull="false" sms-name="" src="$.suspended" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <record id="permissions" order="" paramOrder="5" parentOrder="0" src="$.permissions" isExtended="false">
+            <dataset defaultvalue="" id="Accountant Module" order="" paramOrder="6" parentOrder="5" src="['Accountant Module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="7" parentOrder="6" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="8" parentOrder="6" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+            <dataset defaultvalue="" id="Hybrid Module" order="" paramOrder="9" parentOrder="5" src="['Hybrid Module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="10" parentOrder="9" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="11" parentOrder="9" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+            <dataset defaultvalue="" id="Management module" order="" paramOrder="12" parentOrder="5" src="['Management module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="13" parentOrder="12" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="14" parentOrder="12" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+            <dataset defaultvalue="" id="Selling Module" order="" paramOrder="15" parentOrder="5" src="['Selling Module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="16" parentOrder="15" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="17" parentOrder="15" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+            <dataset defaultvalue="" id="Report Module" order="" paramOrder="18" parentOrder="5" src="['Report Module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="19" parentOrder="18" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="20" parentOrder="18" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+            <dataset defaultvalue="" id="Sales Module" order="" paramOrder="21" parentOrder="5" src="['Sales Module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="22" parentOrder="21" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="23" parentOrder="21" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+            <dataset defaultvalue="" id="Dashboard Module" order="" paramOrder="24" parentOrder="5" src="['Dashboard Module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="25" parentOrder="24" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="26" parentOrder="24" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+            <dataset defaultvalue="" id="Admin Module" order="" paramOrder="27" parentOrder="5" src="['Admin Module'][*]" testvalue="" isExtended="false">
+                <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="option_name" order="" paramOrder="28" parentOrder="27" passnull="false" sms-name="" src="option_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+                <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="29" parentOrder="27" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                    <accessType></accessType>
+                </param>
+            </dataset>
+        </record>
+    </service-output>
+</service>

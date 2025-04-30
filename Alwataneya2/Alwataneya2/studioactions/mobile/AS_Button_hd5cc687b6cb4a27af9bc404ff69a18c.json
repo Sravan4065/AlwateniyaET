@@ -1,0 +1,85 @@
+{
+    "AS_Button_hd5cc687b6cb4a27af9bc404ff69a18c": {
+        "id": "AS_Button_hd5cc687b6cb4a27af9bc404ff69a18c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "KUID": "daa20ab46ac54f98964c811a5801f59d",
+            "name": "CopyIdentity",
+            "platform": null,
+            "type": "forms"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__baa0e45a4be2477e8bc85940ed967f07",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getData",
+            "display": "getData",
+            "inputparams": [],
+            "parentId": "SHOW_ALERT_d17d32b627814d219a6a809d3fc89636",
+            "callbackType": "True",
+            "disabled": null,
+            "source": "controller"
+        }, {
+            "id": "NAVIGATE_TO_FORM__a722b5fa94fb4e3c81097b72476a081d",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmSellCarList12",
+            "formKUID": "h446b2a553984decac64bc1a0f79427d",
+            "projectName": "Alwataneya2",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "SHOW_ALERT_d17d32b627814d219a6a809d3fc89636",
+            "callbackType": "True",
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }, {
+            "id": "SHOW_ALERT_d17d32b627814d219a6a809d3fc89636",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertMessage": "Login Successfull!!!",
+            "messageType": "constant",
+            "parentId": "INVOKE_SERVICE_d24a59b255504200968b3445fe3f525c",
+            "callbackType": "Success",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "SHOW_ALERT_f5d00a2254644da4b19b97e3b76f4b18",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertMessage": "Login Failed Try Again!!",
+            "messageType": "constant",
+            "parentId": "INVOKE_SERVICE_d24a59b255504200968b3445fe3f525c",
+            "callbackType": "Failure",
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": null
+        }, {
+            "id": "INVOKE_SERVICE_d24a59b255504200968b3445fe3f525c",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "isDeepLinkRequired": false,
+                "login_type": "oauth2",
+                "operationname": "login",
+                "servicename": "CustomAzureB2C",
+                "type": "identity"
+            },
+            "enableMappingEditor": true,
+            "useDeviceBrowser": true,
+            "isDeepLinkRequired": false
+        }]
+    }
+}

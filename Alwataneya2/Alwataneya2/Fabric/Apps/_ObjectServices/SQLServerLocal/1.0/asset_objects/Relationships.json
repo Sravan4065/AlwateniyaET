@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "asset_objects",
+  "targetObject" : "fleet",
+  "relationshipKeys" : [ {
+    "sourceField" : "object_id",
+    "targetField" : "object_id",
+    "etag" : "78a82faf-d653-4a3c-ab54-88b8934d613e"
+  } ],
+  "name" : "asset_objects_fleet",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

@@ -1,0 +1,98 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf147ba359c4473099bd75eecaeaf506",
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "HeaderRegister": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "g1d5019d128c4cd1a27309927e05e688",
+                "srcKUID": "u4df262133cd408894a6e7824791a5a7",
+                "wType": "FlexContainer"
+            }
+        },
+        "btnLogin": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bee59c22ff7348d89e47747c739f8477",
+                "srcKUID": "u6faa43affc0416fb42fe80ee5eedc53",
+                "wType": "Button"
+            }
+        },
+        "imgAWA": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a3d07e12722647679e993162eadb4514",
+                "srcKUID": "ud7a9778a5df4be69e21d5a8fb65bc8a",
+                "wType": "Image"
+            },
+            "src": "logo_1_5.png"
+        },
+        "imgBack": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jf3ec88a4e304bda9deb754581264855",
+                "srcKUID": "u28d3e66bf054c7fabee20e4cbe7bcc8",
+                "wType": "Image"
+            },
+            "isVisible": true,
+            "src": "vector__1_1_1.png"
+        }
+    },
+    "enablescrolling": true,
+    "id": "HeaderRegisterForVerificationCode",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "g1d5019d128c4cd1a27309927e05e688",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxEmailVerificationCode",
+    "pf": "CopyfrmRegister1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "u4df262133cd408894a6e7824791a5a7",
+    "wType": "UserWidgetInstance"
+}

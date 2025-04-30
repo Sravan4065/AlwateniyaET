@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="create-fleet-object" passwordencrypted="false" security="public" type="dataAdapterConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value=""/>
+        <config-param api-version="" appid="" name="opcode" value="service"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="entitymetadata" value="{&quot;dml&quot;:false,&quot;query&quot;:&quot;INSERT INTO fleet\n(category_id,sub_category_id,target_selling_price,year_of_making,chassis_number,branch,no_of_keys,client_name,object_id,created_by)\nOUTPUT INSERTED.*\nVALUES(@category_id,@sub_category_id ,@target_selling_price,@year_of_making,@chassis_number,@branch,@no_of_keys,@client_name,@object_id,@created_by);&quot;,&quot;overloadPosition&quot;:0,&quot;serviceInput&quot;:[{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;category_id&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;sub_category_id&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;no_of_keys&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;chassis_number&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;year_of_making&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;branch&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;client_name&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;object_id&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;created_by&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;target_selling_price&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;}],&quot;serviceOutput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;}"/>
+        <config-param api-version="" appid="" name="metadataformatterobject" value="{&quot;overloadPosition&quot;:0,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;,&quot;dml&quot;:false,&quot;serviceOutput&quot;:[],&quot;displayName&quot;:&quot;CustomQuery&quot;,&quot;qualifiedName&quot;:&quot;dbo_CustomQuery&quot;,&quot;pkgName&quot;:&quot;&quot;,&quot;serviceInput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;qualifiedNameSuffix&quot;:&quot;&quot;}"/>
+        <config-param api-version="" appid="" name="isCustomQuery" value="true"/>
+        <config-param api-version="" appid="" name="customQuery" value="INSERT INTO fleet&#10;(category_id,sub_category_id,target_selling_price,year_of_making,chassis_number,branch,no_of_keys,client_name,object_id,created_by)&#10;OUTPUT INSERTED.*&#10;VALUES(@category_id,@sub_category_id ,@target_selling_price,@year_of_making,@chassis_number,@branch,@no_of_keys,@client_name,@object_id,@created_by);"/>
+        <config-param api-version="" appid="" name="password" value="et_dev@12"/>
+        <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
+        <config-param api-version="" appid="" name="advancedSettings" value=""/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:sqlserver://et-az-dev-sqlmi.3ba814f9a3e7.database.windows.net;databaseName=et_dev_awa_tx;encrypt=true"/>
+        <config-param api-version="" appid="" name="jdbcClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <config-param api-version="" appid="" name="userId" value="et_dev_awa_tx_user"/>
+        <config-param api-version="" appid="" name="maxPoolSize" value=""/>
+        <config-param api-version="" appid="" name="connectionTimeout" value=""/>
+        <config-param api-version="" appid="" name="authservicetype" value="IdentityProvider"/>
+        <config-param api-version="" appid="" name="adaptertype" value="CUSTOM"/>
+        <config-param api-version="" appid="" name="basepackage" value="com.kony.rdbms"/>
+        <config-param api-version="" appid="" name="identityProviderType" value=""/>
+        <config-param api-version="" appid="" name="identityProvider" value=""/>
+        <config-param api-version="" appid="" name="mapped_to" value="dbo.CustomQuery"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false"/>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="category_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="9" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sub_category_id" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="311" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="target_selling_price" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="65000" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="year_of_making" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="2024" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chassis_number" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="ZXY321CBAQ" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="branch" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="12" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="no_of_keys" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="client_name" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Ali" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="object_id" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="43F96390-00FB-4F54-85B4-888F1F180ED5" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="created_by" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="4052" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="" description="" encode="false" format="" formatvalue="" name="criteria" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

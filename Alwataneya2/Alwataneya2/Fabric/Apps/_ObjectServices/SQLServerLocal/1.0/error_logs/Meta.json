@@ -1,0 +1,86 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "error_logs",
+      "qualifiedName" : "dbo.error_logs",
+      "metadataformatterobject" : "{\"displayName\":\"error_logs\",\"qualifiedName\":\"dbo.error_logs\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"error_logs\",\"schemaName\":\"dbo\",\"tableName\":\"error_logs\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "error_logs",
+      "qualifiedName" : "dbo.error_logs",
+      "metadataformatterobject" : "{\"displayName\":\"error_logs\",\"qualifiedName\":\"dbo.error_logs\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"error_logs\",\"schemaName\":\"dbo\",\"tableName\":\"error_logs\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "error_message",
+    "targetField" : "error_message",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "user_ip",
+    "targetField" : "user_ip",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "activity_ref_id",
+    "targetField" : "activity_ref_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "module",
+    "targetField" : "module",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "message",
+    "targetField" : "message",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "platform",
+    "targetField" : "platform",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "component",
+    "targetField" : "component",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "payload",
+    "targetField" : "payload",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "activity_type",
+    "targetField" : "activity_type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "browser",
+    "targetField" : "browser",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "error_code",
+    "targetField" : "error_code",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "option_id",
+    "targetField" : "option_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "activity_on",
+    "targetField" : "activity_on",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "device",
+    "targetField" : "device",
+    "type" : "request_response"
+  } ]
+}

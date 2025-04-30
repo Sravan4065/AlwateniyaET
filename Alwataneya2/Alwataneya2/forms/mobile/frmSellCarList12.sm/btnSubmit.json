@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "12%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s245462819234d90bcba99914f49a26c",
+    "_text_": "Submit",
+    "_top_": {
+        "type": "string",
+        "value": "93.05%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s0a1161573ef4f0cb40bdab3c6441ff5",
+    "id": "btnSubmit",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e1caa379b8cd45f4b0ad2f148099ed3c",
+    "name": "kony.ui.Button",
+    "parent": "flxMain",
+    "pf": "frmSellCarList12",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

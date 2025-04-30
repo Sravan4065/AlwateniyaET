@@ -1,0 +1,62 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "object_files",
+      "qualifiedName" : "dbo.object_files",
+      "metadataformatterobject" : "{\"displayName\":\"object_files\",\"qualifiedName\":\"dbo.object_files\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"object_files\",\"schemaName\":\"dbo\",\"tableName\":\"object_files\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "object_files",
+      "qualifiedName" : "dbo.object_files",
+      "metadataformatterobject" : "{\"displayName\":\"object_files\",\"qualifiedName\":\"dbo.object_files\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"object_files\",\"schemaName\":\"dbo\",\"tableName\":\"object_files\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "uploaded_time",
+    "targetField" : "uploaded_time",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "file_url",
+    "targetField" : "file_url",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "uploaded_by",
+    "targetField" : "uploaded_by",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "file_name",
+    "targetField" : "file_name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "service_id",
+    "targetField" : "service_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "file_description",
+    "targetField" : "file_description",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "type",
+    "targetField" : "type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "object_id",
+    "targetField" : "object_id",
+    "type" : "request_response"
+  } ]
+}

@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "8dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s5e68267acb94f1d933ab03eac56306b",
+    "_top_": {
+        "type": "string",
+        "value": "2dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "13%"
+    },
+    "allboxes": [],
+    "android": {
+        "width": {
+            "type": "string",
+            "value": "13%"
+        }
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxUL1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e91e738e7bbc46f0a0d91bd183558da1",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxUnderLineContainer",
+    "pf": "CopyfrmDashBoard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

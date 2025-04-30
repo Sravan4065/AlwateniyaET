@@ -1,0 +1,77 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sb62ee7868e942229cfc1ddf8493f47e",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "flxCalendarItem1",
+        "CopyflxCalendarItem0j7db74c483004b",
+        "CopyflxCalendarItem0ea310ce4c1bf49",
+        "CopyflxCalendarItem0gcf81ed8b2be4f",
+        "CopyflxCalendarItem0j6aaa1e555744d",
+        "CopyflxCalendarItem0g3ad5102289045"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "flxScrollAuctionCalendarContent",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f926b4678ffa4379a3e12d2c1ad0969e",
+    "layouttype": 3,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "flxAuctionCalendarContent",
+    "pf": "frmDashBoard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "scrolldirection": 1,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1
+}

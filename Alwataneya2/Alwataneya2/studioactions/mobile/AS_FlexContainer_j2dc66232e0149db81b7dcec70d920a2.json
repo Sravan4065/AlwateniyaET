@@ -1,0 +1,56 @@
+{
+    "AS_FlexContainer_j2dc66232e0149db81b7dcec70d920a2": {
+        "id": "AS_FlexContainer_j2dc66232e0149db81b7dcec70d920a2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "KUID": "h80b24e401b74fd795557f5df1b2c9da",
+            "name": "CopyfrmRegister",
+            "platform": null,
+            "type": "forms"
+        },
+        "language": "js",
+        "eventType": "onClick",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__b10e59622c70414d81efc0f60ce002c6",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "CopyfrmRegister1",
+            "formKUID": "fd4cd255883c43dca34eb66ba2ca0470",
+            "projectName": "Alwataneya2",
+            "mappings": {
+                "ME_Mapping_c2124fdbb8374350984687301f9b1828": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_c2124fdbb8374350984687301f9b1828",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "propertyKey": "txtFirstNlastName_text",
+                        "widgetId": "txtFirstNlastName",
+                        "widgetPath": "this.view.txtFirstNlastName",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "CopyfrmRegister",
+                        "widgetKUID": "cb38a7adc2c24190837902de66b5bafc",
+                        "itemKUID": "h80b24e401b74fd795557f5df1b2c9da",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_c2124fdbb8374350984687301f9b1828"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"txtFirstNlastName_text\": self.view.txtFirstNlastName.text,\n    \"_meta_\": {\n        \"eventName\": \"\",\n        \"widgetId\": \"\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

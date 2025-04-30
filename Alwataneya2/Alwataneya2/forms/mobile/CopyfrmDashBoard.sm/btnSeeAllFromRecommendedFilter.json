@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s92aa45d1b0241c2931e0bfce2b426d2",
+    "_text_": "See all",
+    "_top_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s6554982eff64275ba0556e93fb1d8db"
+    },
+    "displaytext": true,
+    "id": "btnSeeAllFromRecommendedFilter",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f6227c5ff28c4574bc60ba9bd725cdde",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxRecommendedFilter",
+    "pf": "CopyfrmDashBoard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

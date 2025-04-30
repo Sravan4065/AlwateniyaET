@@ -1,0 +1,54 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "object_images",
+      "qualifiedName" : "dbo.object_images",
+      "metadataformatterobject" : "{\"displayName\":\"object_images\",\"qualifiedName\":\"dbo.object_images\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"object_images\",\"schemaName\":\"dbo\",\"tableName\":\"object_images\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "object_images",
+      "qualifiedName" : "dbo.object_images",
+      "metadataformatterobject" : "{\"displayName\":\"object_images\",\"qualifiedName\":\"dbo.object_images\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"object_images\",\"schemaName\":\"dbo\",\"tableName\":\"object_images\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "file_url",
+    "targetField" : "file_url",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "content_type",
+    "targetField" : "content_type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "added_by",
+    "targetField" : "added_by",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "category",
+    "targetField" : "category",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "object_id",
+    "targetField" : "object_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "thumbnail_image",
+    "targetField" : "thumbnail_image",
+    "type" : "request_response"
+  } ]
+}

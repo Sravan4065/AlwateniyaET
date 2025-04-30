@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="add-fleet-record" passwordencrypted="false" security="authorized_app_user" type="workflowConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="function getCertificate_Postprocessor6(){&#13;&#10;    var resultObj = voltMX.getResultObject();&#13;&#10;    var resultJson = resultObj.toJson();&#13;&#10;    var result = {};&#13;&#10;&#13;&#10;    if (resultJson.hasOwnProperty(&quot;create_fleet&quot;) &amp;&amp; resultJson.create_fleet[0].opstatus == 0) &#13;&#10;    {&#13;&#10;        result = {&#13;&#10;            &quot;data&quot;:{&#13;&#10;                &quot;message&quot;:&quot;Fleet added Successfully. The Fleet id is : &quot;+ resultJson.create_fleet[0].records[0].fleet_id&#13;&#10;            },&#13;&#10;            &quot;status&quot;:200,&#13;&#10;            &quot;workflowInstanceId&quot;: resultJson.workflowInstanceId&#13;&#10;        }&#13;&#10;    }&#13;&#10;    else if(resultJson.hasOwnProperty(&quot;asset_object_create&quot;) &amp;&amp; resultJson.asset_object_create[0].opstatus == 0 ) {&#13;&#10;        result = {&#13;&#10;            &quot;error&quot;:{&#13;&#10;                &quot;message&quot;:&quot;Fail in asset_object_create&quot;&#13;&#10;            },&#13;&#10;            &quot;status&quot;:500,&#13;&#10;            &quot;workflowInstanceId&quot;: resultJson.workflowInstanceId&#13;&#10;        }&#13;&#10;    }&#13;&#10;    else{&#13;&#10;        result = {&#13;&#10;            &quot;error&quot;:{&#13;&#10;                &quot;message&quot;:&quot;Fail&quot;&#13;&#10;            },&#13;&#10;            &quot;status&quot;:500,&#13;&#10;            &quot;workflowInstanceId&quot;: resultJson.workflowInstanceId&#13;&#10;        }&#13;&#10;    }&#13;&#10;    &#13;&#10;    return result;&#13;&#10;}&#13;&#10;&#13;&#10;getCertificate_Postprocessor6();"/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="frontend_url" value="api/v1/add-fleet-record"/>
+        <config-param api-version="" appid="" name="frontend_supported_method" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value=""/>
+        <config-param api-version="" appid="" name="workflowName" value="add-fleet-record"/>
+        <config-param api-version="" appid="" name="version" value="1.0"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false"/>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="category_name" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="category_id" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sub_category_id" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="target_selling_price" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="year_of_making" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chassis_number" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="branch" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="no_of_keys" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="client" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="workflowInstanceId" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.workflowInstanceId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="create_fleet" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.create_fleet" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="asset_object_create" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.asset_object_create" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="status" order="" paramOrder="6" parentOrder="0" passnull="false" sms-name="" src="$.status" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <record id="data" order="" paramOrder="4" parentOrder="0" src="$.data" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="message" order="" paramOrder="5" parentOrder="4" passnull="false" sms-name="" src="message" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

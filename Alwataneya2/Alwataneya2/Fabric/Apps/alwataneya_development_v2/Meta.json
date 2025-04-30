@@ -1,0 +1,106 @@
+{
+  "subType" : "customapp",
+  "description" : "alwataneya_development_v2",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "fry_collection",
+    "version" : "1.0",
+    "etag" : "52bf9f5e-bf79-49f5-8ffe-bcda81b7b26d"
+  }, {
+    "name" : "fry_int_admin",
+    "version" : "1.0",
+    "etag" : "96c71565-ca39-406a-87f5-b05733e4d339"
+  }, {
+    "name" : "fry_int_asset",
+    "version" : "1.0",
+    "etag" : "8951644e-0f3a-4e74-aaed-4ee0eb44d766"
+  }, {
+    "name" : "fry_int_auctions",
+    "version" : "1.0",
+    "etag" : "62502cfa-104b-41b7-9ad8-cb85a8ebe3bd"
+  }, {
+    "name" : "fry_int_fleet",
+    "version" : "1.0",
+    "etag" : "3233a312-f97b-427c-b0c1-dc1196e739ee"
+  }, {
+    "name" : "fry_int_logs",
+    "version" : "1.0",
+    "etag" : "d56804ad-ff83-41ec-b242-35d58c996e8f"
+  }, {
+    "name" : "fry_int_post_auction",
+    "version" : "1.0",
+    "etag" : "b829283b-f454-482d-a295-42d70d92a1cf"
+  }, {
+    "name" : "fry_int_seller",
+    "version" : "1.0",
+    "etag" : "c62cb259-bda1-41c2-93ee-7214a2d799e4"
+  }, {
+    "name" : "fry_int_user",
+    "version" : "1.0",
+    "etag" : "8f73786f-9a30-4169-98cc-2ec5b5ae1cef"
+  }, {
+    "name" : "fry_wf",
+    "version" : "1.0",
+    "etag" : "b0461da4-7eeb-4b00-a059-8f1862928ba5"
+  }, {
+    "name" : "ms_admin",
+    "version" : "1.0",
+    "etag" : "5ff1347e-5331-45cf-bc65-137d574eef22"
+  }, {
+    "name" : "ms_auctions",
+    "version" : "1.0",
+    "etag" : "29c56797-2f51-474a-92e5-eb7a1f4bc447"
+  }, {
+    "name" : "ms_config",
+    "version" : "1.0",
+    "etag" : "2c45a380-d9b6-4a26-b135-851b79f72baf"
+  }, {
+    "name" : "ms_fleet",
+    "version" : "1.0",
+    "etag" : "4b2e5af5-f2d9-47e3-bad9-efa66f7d8179"
+  }, {
+    "name" : "ms_user",
+    "version" : "1.0",
+    "etag" : "036186a8-a3f7-4c0e-be72-958cf94661bd"
+  }, {
+    "name" : "ms_user_reg",
+    "version" : "1.0",
+    "etag" : "5519f94e-a6ca-4ec8-b949-8df5b227b349"
+  }, {
+    "name" : "ms_user_token",
+    "version" : "1.0",
+    "etag" : "250c3f9a-8eff-4402-aa06-455c971a692b"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "SQLServerLocal",
+    "version" : "1.0",
+    "etag" : "4d537423-173e-47a7-991c-667b7bde60b3"
+  } ],
+  "workflowSvcs" : [ {
+    "name" : "add_a_dam_item",
+    "version" : "1.0",
+    "etag" : "021302a8-c2bd-44b2-9ea4-600894d3c7f7"
+  }, {
+    "name" : "add_items_dam",
+    "version" : "1.0",
+    "etag" : "186efd15-273d-40fc-97cf-7632e0cb59b7"
+  }, {
+    "name" : "add-fleet-record",
+    "version" : "1.0",
+    "etag" : "69e8fd5f-d2f4-4145-a78c-4de639ddef91"
+  }, {
+    "name" : "auction-bidding",
+    "version" : "1.0",
+    "etag" : "51eabcab-9f96-43d7-9a29-1217471f7ebc"
+  }, {
+    "name" : "test_N_R",
+    "version" : "1.0",
+    "etag" : "eac6cc00-97ee-4325-8d52-8be056cd90d1"
+  }, {
+    "name" : "test1_N_R",
+    "version" : "1.0",
+    "etag" : "17401421-b98c-4e8e-b057-46107bc50c4f"
+  } ],
+  "identity" : [ "CopyDevAzureB2C", "CustomAzureB2C", "DevAzureB2C" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":0,\"session_max_duration_mins\":5,\"show_security_attributes\":true,\"is_integrity_enabled\":false,\"auto_extend\":false,\"integrity_key_type\":\"custom\",\"integrity_key\":\"\"}"
+}

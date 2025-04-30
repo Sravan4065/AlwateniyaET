@@ -1,0 +1,66 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "asset_objects",
+      "qualifiedName" : "dbo.asset_objects",
+      "metadataformatterobject" : "{\"displayName\":\"asset_objects\",\"qualifiedName\":\"dbo.asset_objects\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"asset_objects\",\"schemaName\":\"dbo\",\"tableName\":\"asset_objects\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "asset_objects",
+      "qualifiedName" : "dbo.asset_objects",
+      "metadataformatterobject" : "{\"displayName\":\"asset_objects\",\"qualifiedName\":\"dbo.asset_objects\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"asset_objects\",\"schemaName\":\"dbo\",\"tableName\":\"asset_objects\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "relist_count",
+    "targetField" : "relist_count",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "created_on",
+    "targetField" : "created_on",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "previous_auction_id",
+    "targetField" : "previous_auction_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "description",
+    "targetField" : "description",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "asset_id",
+    "targetField" : "asset_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "title",
+    "targetField" : "title",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "object_id",
+    "targetField" : "object_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "created_by",
+    "targetField" : "created_by",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "status",
+    "targetField" : "status",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "additional_comments",
+    "targetField" : "additional_comments",
+    "type" : "request_response"
+  } ]
+}

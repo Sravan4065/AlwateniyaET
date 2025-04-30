@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "29dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6e514dac83641f89a23b02c71582808",
+    "_text_": "Sign Up as a Seller",
+    "_top_": {
+        "type": "string",
+        "value": "290dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "75%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3d87ba262864995afa373466fd12acb",
+    "id": "btnSeller",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g503dbdf0b7e47e2ac40b3c4dd69c501",
+    "name": "kony.ui.Button",
+    "parent": "flxBody",
+    "pf": "CopyfrmLandingPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

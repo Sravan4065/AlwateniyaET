@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="user-fleet-my-vehicles_N_R" passwordencrypted="false" security="authorized_app_user" type="dataAdapterConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value=""/>
+        <config-param api-version="" appid="" name="opcode" value="service"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="entitymetadata" value="{&quot;dml&quot;:false,&quot;query&quot;:&quot;SELECT \n    ao.object_id, \n    ao.title, \n    f.year_of_making, \n    ao.created_on, \n    f.selling_price, \n    f.chassis_number, \n    f.branch, \n    f.is_rejected AS rejected, \n    f.rejectnotes AS reason, \n    f.fleet_id,\n    f.lot_no\nFROM alwataneya_v4.dbo.asset_objects ao\nLEFT JOIN alwataneya_v4.dbo.fleet f \n    ON ao.object_id = f.object_id\nLEFT JOIN alwataneya_v4.dbo.users u \n    ON u.user_id = @user_id\nWHERE \n    (\n        u.job_title LIKE '%admin%'\n        OR ao.created_by = u.user_id\n    )\n    AND ao.status = 'In Progress'\n    AND (f.wf_activity_id = 1 OR f.wf_activity_id IS NULL)\n    AND (\n        @lot_no_1 IS NULL OR f.lot_no like '%'+@lot_no_2+'%' \n    )\n    AND ( @title_1 is null or ao.title like '%'+@title_2+'%')\n\tAND ( @chassis_number_1 is null or f.chassis_number like '%'+@chassis_number_2+'%')\n\tAND ( @created_on_1 is null or ao.created_on like '%'+@created_on_2+'%')\n\tAND ( @branch_1 is null or f.branch like '%'+@branch_2+'%');\n&quot;,&quot;overloadPosition&quot;:0,&quot;serviceInput&quot;:[{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;lot_no_2&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;foundrySerivceName&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;lot_no_1&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;user_id&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;branch_1&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;branch_2&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;chassis_number_1&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;created_on_2&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;chassis_number_2&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;created_on_1&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;title_1&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;},{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;title_2&quot;,&quot;inoutType&quot;:0,&quot;sqlDataType&quot;:0,&quot;ordinalPosition&quot;:0,&quot;paramClass&quot;:&quot;com.kony.rdbms.metadata.model.ParamTypeData&quot;}],&quot;serviceOutput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;}"/>
+        <config-param api-version="" appid="" name="metadataformatterobject" value="{&quot;overloadPosition&quot;:0,&quot;serviceType&quot;:&quot;com.kony.rdbms.metadata.model.CustomQueryMetadata&quot;,&quot;dml&quot;:false,&quot;serviceOutput&quot;:[],&quot;displayName&quot;:&quot;CustomQuery&quot;,&quot;qualifiedName&quot;:&quot;dbo_CustomQuery&quot;,&quot;pkgName&quot;:&quot;&quot;,&quot;serviceInput&quot;:[],&quot;name&quot;:&quot;CustomQuery&quot;,&quot;schemaName&quot;:&quot;dbo&quot;,&quot;qualifiedNameSuffix&quot;:&quot;&quot;}"/>
+        <config-param api-version="" appid="" name="isCustomQuery" value="true"/>
+        <config-param api-version="" appid="" name="customQuery" value="SELECT &#10;    ao.object_id, &#10;    ao.title, &#10;    f.year_of_making, &#10;    ao.created_on, &#10;    f.selling_price, &#10;    f.chassis_number, &#10;    f.branch, &#10;    f.is_rejected AS rejected, &#10;    f.rejectnotes AS reason, &#10;    f.fleet_id,&#10;    f.lot_no&#10;FROM alwataneya_v4.dbo.asset_objects ao&#10;LEFT JOIN alwataneya_v4.dbo.fleet f &#10;    ON ao.object_id = f.object_id&#10;LEFT JOIN alwataneya_v4.dbo.users u &#10;    ON u.user_id = @user_id&#10;WHERE &#10;    (&#10;        u.job_title LIKE '%admin%'&#10;        OR ao.created_by = u.user_id&#10;    )&#10;    AND ao.status = 'In Progress'&#10;    AND (f.wf_activity_id = 1 OR f.wf_activity_id IS NULL)&#10;    AND (&#10;        @lot_no_1 IS NULL OR f.lot_no like '%'+@lot_no_2+'%' &#10;    )&#10;    AND ( @title_1 is null or ao.title like '%'+@title_2+'%')&#10; AND ( @chassis_number_1 is null or f.chassis_number like '%'+@chassis_number_2+'%')&#10; AND ( @created_on_1 is null or ao.created_on like '%'+@created_on_2+'%')&#10; AND ( @branch_1 is null or f.branch like '%'+@branch_2+'%');&#10;"/>
+        <config-param api-version="" appid="" name="password" value="et_dev@12"/>
+        <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
+        <config-param api-version="" appid="" name="advancedSettings" value=""/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:sqlserver://et-az-dev-sqlmi.3ba814f9a3e7.database.windows.net;databaseName=et_dev_awa_tx;encrypt=true"/>
+        <config-param api-version="" appid="" name="jdbcClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <config-param api-version="" appid="" name="userId" value="et_dev_awa_tx_user"/>
+        <config-param api-version="" appid="" name="maxPoolSize" value=""/>
+        <config-param api-version="" appid="" name="connectionTimeout" value=""/>
+        <config-param api-version="" appid="" name="authservicetype" value="IdentityProvider"/>
+        <config-param api-version="" appid="" name="adaptertype" value="CUSTOM"/>
+        <config-param api-version="" appid="" name="basepackage" value="com.kony.rdbms"/>
+        <config-param api-version="" appid="" name="identityProviderType" value=""/>
+        <config-param api-version="" appid="" name="identityProvider" value=""/>
+        <config-param api-version="" appid="" name="mapped_to" value="dbo.CustomQuery"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false"/>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="4052" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="Your Vehicles" description="" encode="true" format="None" formatvalue="" name="foundrySerivceName" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Your Vehicles" value="Your Vehicles" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="lot_no_1" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1017" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="lot_no_2" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="1017" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="title_1" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="title_2" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chassis_number_1" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chassis_number_2" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="created_on_1" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="created_on_2" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="branch_1" order="" paramOrder="11" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="branch_2" order="" paramOrder="12" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="" description="" encode="false" format="" formatvalue="" name="criteria" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

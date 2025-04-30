@@ -1,0 +1,382 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "fleet",
+      "qualifiedName" : "dbo.fleet",
+      "metadataformatterobject" : "{\"displayName\":\"fleet\",\"qualifiedName\":\"dbo.fleet\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"fleet\",\"schemaName\":\"dbo\",\"tableName\":\"fleet\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "fleet",
+      "qualifiedName" : "dbo.fleet",
+      "metadataformatterobject" : "{\"displayName\":\"fleet\",\"qualifiedName\":\"dbo.fleet\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"fleet\",\"schemaName\":\"dbo\",\"tableName\":\"fleet\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "relist_count",
+    "targetField" : "relist_count",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "directsales",
+    "targetField" : "directsales",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "motor_type",
+    "targetField" : "motor_type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "fuel",
+    "targetField" : "fuel",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "chassis_number",
+    "targetField" : "chassis_number",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "featured_C_R",
+    "targetField" : "featured_C_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "sequence_N_R",
+    "targetField" : "sequence_N_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "buyer_status_N_R",
+    "targetField" : "buyer_status_N_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "branch",
+    "targetField" : "branch",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "tax_added",
+    "targetField" : "tax_added",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "transmission_type",
+    "targetField" : "transmission_type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "hybridclosed_N_R",
+    "targetField" : "hybridclosed_N_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "car_type",
+    "targetField" : "car_type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "horse_power",
+    "targetField" : "horse_power",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "shipping",
+    "targetField" : "shipping",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_rejected",
+    "targetField" : "is_rejected",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "payment",
+    "targetField" : "payment",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "vin",
+    "targetField" : "vin",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "current_fee",
+    "targetField" : "current_fee",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "international",
+    "targetField" : "international",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "buyer_expense",
+    "targetField" : "buyer_expense",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "en_shipping_terms",
+    "targetField" : "en_shipping_terms",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "created",
+    "targetField" : "created",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "previous_auction_id",
+    "targetField" : "previous_auction_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "vat",
+    "targetField" : "vat",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "photo_uploaded",
+    "targetField" : "photo_uploaded",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "created_by",
+    "targetField" : "created_by",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "object_id",
+    "targetField" : "object_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "suspended",
+    "targetField" : "suspended",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "previous_numberplate",
+    "targetField" : "previous_numberplate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "seller_expense",
+    "targetField" : "seller_expense",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "approved_by",
+    "targetField" : "approved_by",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "recovery_cost",
+    "targetField" : "recovery_cost",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "created_on",
+    "targetField" : "created_on",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "org_id",
+    "targetField" : "org_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "minimum_selling_price",
+    "targetField" : "minimum_selling_price",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "rejectnotes",
+    "targetField" : "rejectnotes",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "old_id",
+    "targetField" : "old_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "shipping_terms",
+    "targetField" : "shipping_terms",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "seller_offer",
+    "targetField" : "seller_offer",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "reserve_price",
+    "targetField" : "reserve_price",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "motor_no",
+    "targetField" : "motor_no",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "target_selling_price",
+    "targetField" : "target_selling_price",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "selling_price",
+    "targetField" : "selling_price",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "no_of_keys",
+    "targetField" : "no_of_keys",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "description",
+    "targetField" : "description",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "increment",
+    "targetField" : "increment",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "colors",
+    "targetField" : "colors",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "copied_C_R",
+    "targetField" : "copied_C_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "tax_num",
+    "targetField" : "tax_num",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "relisted",
+    "targetField" : "relisted",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "category_id",
+    "targetField" : "category_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "milage",
+    "targetField" : "milage",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "milage_type",
+    "targetField" : "milage_type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "sub_category_id",
+    "targetField" : "sub_category_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "wf_activity_id",
+    "targetField" : "wf_activity_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "year_of_making",
+    "targetField" : "year_of_making",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "commission",
+    "targetField" : "commission",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "fleet_id",
+    "targetField" : "fleet_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "no_of_cylinders",
+    "targetField" : "no_of_cylinders",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "num_bids_N_R",
+    "targetField" : "num_bids_N_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "client_name",
+    "targetField" : "client_name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "payment_slip_N_R",
+    "targetField" : "payment_slip_N_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "sold",
+    "targetField" : "sold",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "seller_status_N_R",
+    "targetField" : "seller_status_N_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "reference_num",
+    "targetField" : "reference_num",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "shipping_cost",
+    "targetField" : "shipping_cost",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "country_origin",
+    "targetField" : "country_origin",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "bn_only_C_R",
+    "targetField" : "bn_only_C_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "value_added_tax",
+    "targetField" : "value_added_tax",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "due_date",
+    "targetField" : "due_date",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "no_of_doors",
+    "targetField" : "no_of_doors",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "buyer_offer",
+    "targetField" : "buyer_offer",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "current_bid",
+    "targetField" : "current_bid",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "en_ownership",
+    "targetField" : "en_ownership",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lot_no",
+    "targetField" : "lot_no",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "clean_cost",
+    "targetField" : "clean_cost",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "current_status_N_R",
+    "targetField" : "current_status_N_R",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "sales_ready",
+    "targetField" : "sales_ready",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ownership",
+    "targetField" : "ownership",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_washed",
+    "targetField" : "is_washed",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "minimum_comission",
+    "targetField" : "minimum_comission",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "oracle_num",
+    "targetField" : "oracle_num",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "closed",
+    "targetField" : "closed",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "internal_no",
+    "targetField" : "internal_no",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "location",
+    "targetField" : "location",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "test_cost",
+    "targetField" : "test_cost",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_technical",
+    "targetField" : "is_technical",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "third_party_name",
+    "targetField" : "third_party_name",
+    "type" : "request_response"
+  } ]
+}
