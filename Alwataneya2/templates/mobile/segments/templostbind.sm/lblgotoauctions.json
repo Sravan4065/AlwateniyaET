@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "68%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc21f23fbb2d48928576df86c47afc34",
+    "_text_": "GO TO AUCTIONS",
+    "_top_": {
+        "type": "string",
+        "value": "296dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "29%"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sa87b3f55ce0476ea4dbfd006e2cf0b6",
+    "id": "lblgotoauctions",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e36daac648f14b74aa4cd90f3f02f3ed",
+    "name": "kony.ui.Button",
+    "paddingLocked": true,
+    "paddinginpixel": false,
+    "parent": "flxMain",
+    "pf": "templostbind",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

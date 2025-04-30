@@ -1,0 +1,60 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "54dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s5f6044abe194492b5e811af99858a26",
+    "_top_": {
+        "type": "string",
+        "value": "142dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgshare"
+    ],
+    "clipbounds": false,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxShare",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a02641086a3045a6b4e01fc6310c57d4",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCardata",
+    "pf": "tempBidsList",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}
