@@ -1,0 +1,200 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "Button0e5f7819ec0104b": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PAY NOW",
+                "type": "Button"
+            },
+            "Image0f2a5efec3d9a49": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "",
+                "type": "Image"
+            },
+            "Image0f64cf40eed744e": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "",
+                "type": "Image"
+            },
+            "imgCardata": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "",
+                "type": "Image"
+            },
+            "imgdoc": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "",
+                "type": "Image"
+            },
+            "lblApproval": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "APPROVAL STATUS",
+                "type": "Label"
+            },
+            "lblDocuments": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DOCUMENTS",
+                "type": "Label"
+            },
+            "lblPaymentstatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PAYMENT STATUS",
+                "type": "Label"
+            },
+            "lblStatusApproved": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "APPROVED",
+                "type": "Label"
+            },
+            "lblWinningbid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "WINNING Bid",
+                "type": "Label"
+            },
+            "lblWinningmodelname": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Kia Carnival 2019",
+                "type": "Label"
+            },
+            "lbllocationanme": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mussafah Yard",
+                "type": "Label"
+            },
+            "lbllot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Lot#: 69952",
+                "type": "Label"
+            },
+            "lblpaymentstatusred": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "UNPAID",
+                "type": "Label"
+            },
+            "lblrequestaccess": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REQUEST sERVICES",
+                "type": "Label"
+            },
+            "lblwinningbidamt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10,000",
+                "type": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "Segwinningbidslist",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a744ea95dc544c0f9ea5ceeb0119df77",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxWiningbidslist",
+    "pf": "frmMyBidsPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "ia563fecc13342ebabcde9125d172df9",
+    "rowcounter": 0,
+    "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
+    "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
+    "rowtemplate": "Flex0f4a1e2058da54c",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s394e25221a84c198a12829462d278f1",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "Button0e5f7819ec0104b": "Button0e5f7819ec0104b",
+        "Image0f2a5efec3d9a49": "Image0f2a5efec3d9a49",
+        "Image0f64cf40eed744e": "Image0f64cf40eed744e",
+        "flxDocuments": "flxDocuments",
+        "flxImage": "flxImage",
+        "flxMain": "flxMain",
+        "flxRequestaccess": "flxRequestaccess",
+        "flxWinningdetails": "flxWinningdetails",
+        "flxline": "flxline",
+        "flxwinningbids": "flxwinningbids",
+        "imgCardata": "imgCardata",
+        "imgdoc": "imgdoc",
+        "lblApproval": "lblApproval",
+        "lblDocuments": "lblDocuments",
+        "lblPaymentstatus": "lblPaymentstatus",
+        "lblStatusApproved": "lblStatusApproved",
+        "lblWinningbid": "lblWinningbid",
+        "lblWinningmodelname": "lblWinningmodelname",
+        "lbllocationanme": "lbllocationanme",
+        "lbllot": "lbllot",
+        "lblpaymentstatusred": "lblpaymentstatusred",
+        "lblrequestaccess": "lblrequestaccess",
+        "lblwinningbidamt": "lblwinningbidamt"
+    }
+}

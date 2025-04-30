@@ -1,0 +1,187 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "Label0ba9f64edaddd49": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label",
+                "type": "Label"
+            },
+            "btnBidnow": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "BID NOW",
+                "type": "Button"
+            },
+            "imgCardata": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "mask_group_1.png",
+                "type": "Image"
+            },
+            "imgfavicon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png",
+                "type": "Image"
+            },
+            "imglocation": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png",
+                "type": "Image"
+            },
+            "imgrebid": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png",
+                "type": "Image"
+            },
+            "imgshare": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png",
+                "type": "Image"
+            },
+            "lblCarmodelname": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ford Explorer",
+                "type": "Label"
+            },
+            "lblCurrentbid": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Current Bid",
+                "type": "Label"
+            },
+            "lblCurrentbidamount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10,000",
+                "type": "Label"
+            },
+            "lblTotalbids": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Total Bids: 68",
+                "type": "Label"
+            },
+            "lblarea": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mussafah Yard",
+                "type": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "psp": {
+            "dockSectionHeaders": false
+        }
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "SegCarlist",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none",
+            "showProgressIndicator": true
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a41283328510445998a2763b173c4dac",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxActiveCarsList",
+    "pf": "frmMyBidsPage",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "j157241532cf4f87b3011be4df4354f0",
+    "rowcounter": 0,
+    "rowfocusskin": "s961e586fe794e498e31c111fe40ef67",
+    "rowskin": "s2d1a440627e4c3eb337995bf3931fdd",
+    "rowtemplate": "Flex0a0b13ebbe8374a",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s394e25221a84c198a12829462d278f1",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showprogressindicator": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "Label0ba9f64edaddd49": "Label0ba9f64edaddd49",
+        "btnBidnow": "btnBidnow",
+        "flxBidlist": "flxBidlist",
+        "flxCardata": "flxCardata",
+        "flxDetails": "flxDetails",
+        "flxImage": "flxImage",
+        "flxNameAndAddress": "flxNameAndAddress",
+        "flxRebid": "flxRebid",
+        "flxShare": "flxShare",
+        "flxfav": "flxfav",
+        "flxline": "flxline",
+        "imgCardata": "imgCardata",
+        "imgfavicon": "imgfavicon",
+        "imglocation": "imglocation",
+        "imgrebid": "imgrebid",
+        "imgshare": "imgshare",
+        "lblCarmodelname": "lblCarmodelname",
+        "lblCurrentbid": "lblCurrentbid",
+        "lblCurrentbidamount": "lblCurrentbidamount",
+        "lblTotalbids": "lblTotalbids",
+        "lblarea": "lblarea"
+    }
+}
