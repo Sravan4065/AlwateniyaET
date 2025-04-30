@@ -1,0 +1,89 @@
+{
+    "FP": {
+        "iphone": false,
+        "android": false,
+        "ipad": false,
+        "tabrcandroid": false,
+        "spaip": false,
+        "spaan": false,
+        "spabb": false,
+        "spaipad": false,
+        "spaandroidtablet": false,
+        "winphone8": false,
+        "spawinphone8": false,
+        "windows8": false,
+        "spawindowstablet": false,
+        "desktopweb": false
+    },
+    "general": {
+        "urls": {
+            "konyFabricURL": "https://dev-hcltx.et.ae",
+            "accountsBase": "https://dev-hcltx.et.ae/authService/accounts",
+            "accountsApiBase": "https://dev-hcltx.et.ae:443/accounts/api/v1_0",
+            "portalBase": "https://dev-hcltx.et.ae:443/mfconsole"
+        },
+        "codeEditor": {
+            "indentConf": {},
+            "externalEditor": {
+                "displayName": "Sublime"
+            }
+        },
+        "proxyConfig": {},
+        "remoteMACConfig": {},
+        "testRecorder": {
+            "port": 9111
+        },
+        "AllowLockManagementSettings": false,
+        "inlinePreviewEnabled": false,
+        "isHtmlPreviewEnabled": false,
+        "autoCollapsePW": false,
+        "widgetHighlighterActionButtons": false,
+        "isSnapModeEnabled": true,
+        "containerPlaceholders": true,
+        "skipAppSigningRequirements": false,
+        "autoDetectIP": true,
+        "staticIP": "",
+        "autoUpdate": true,
+        "enableExternalAuth": false,
+        "authProvider": "",
+        "groupServicesByCategory": false,
+        "donotShowGenerateObjectModelUpdate": false,
+        "ANDROID_HOME": "C:\\Users\\Srinivas.P\\AppData\\Local\\Android\\Sdk",
+        "bundletoolLocation": "C:\\Users\\Srinivas.P\\Downloads\\jar\\bundletool-all-1.17.2.jar",
+        "JAVA_HOME": "C:\\Program Files\\Java\\jdk-17",
+        "donotShowDebugPopup": false,
+        "donotShowFPBinaryDebugPopup": false,
+        "ANDROID_DEBUGGER_PORT": 9222,
+        "ANDROID_FP_DEBUGGER_PORT": 9333
+    },
+    "build": {
+        "nativeLocal": {
+            "postBuildAction": "saveAppBinaryLocally",
+            "platforms": {
+                "iphone": false,
+                "android": true,
+                "ipad": false,
+                "tabrcandroid": false,
+                "universalios": false,
+                "universalandroid": false,
+                "watchos": false,
+                "androidwearos": false,
+                "nativewin": false,
+                "nativewinpackage": false
+            }
+        },
+        "removeprintstatements_release": true,
+        "removeprintstatements_debug": false,
+        "support_multiple_ios_workspaces": false
+    },
+    "starter": {
+        "general": {
+            "enableMetrics": true
+        }
+    },
+    "dx": {
+        "general": {},
+        "dxClient": {}
+    },
+    "vizTheme": "dark"
+}
